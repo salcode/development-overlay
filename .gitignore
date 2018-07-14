@@ -35,11 +35,15 @@
 #          add curl line for quick installation
 #          ignore composer files (vendor directory and lock file)
 # 20140606 Add .editorconfig as a tracked file
-# 20140418 remove explicit inclusion 
+# 20140418 remove explicit inclusion
 #          of readme.md (this is not an ignored file by default)
 # 20140407 Initially Published
 #
 # -----------------------------------------------------------------
+
+# Ignore all files in images except default.jpg
+images/*
+!images/default.jpg
 
 # ignore all files starting with . or ~
 .*
