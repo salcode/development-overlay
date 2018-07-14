@@ -1,0 +1,21 @@
+{
+    "name": "salcode/development-overlay",
+    "description": "WordPress plugin to overlay an image on your page during development",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4"
+    },
+    "license": "apache-2.0",
+    "authors": [
+        {
+            "name": "Sal Ferrarello",
+            "homepage": "https://salferrarello.com"
+        }
+    ],
+    "support": {
+      "docs": "https://github.com/salcode/development-overlay",
+      "source": "https://github.com/salcode/development-overlay",
+      "issues": "https://github.com/salcode/development-overlay/issues"
+    }
+}
