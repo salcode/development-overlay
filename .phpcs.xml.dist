@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ruleset name="Iron Code Studio">
+	<description>The PHP CodeSniffer rules used by Sal Ferrarello (salcode) for his Iron Code Studio projects.</description>
+	<!--
+	You can download this file directly
+	to your project from the command-line with
+	curl -O https://gist.githubusercontent.com/salcode/57b1d8018624c73b10015faa29e6acb2/raw/.phpcs.xml.dist
+	-->
+
+	<!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+
+	<!-- Exclude the Node Modules directory. -->
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+
+	<!-- Exclude all Javascript files. -->
+	<exclude-pattern>*.js</exclude-pattern>
+
+	<!-- Exclude minified CSS file. -->
+	<exclude-pattern>style.css</exclude-pattern>
+
+	<!-- Include the WordPress-Extra standard. -->
+	<rule ref="WordPress-Extra">
+		<!--
+		Example of removing a rule.
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+		-->
+	</rule>
+
+	<!-- Add in some extra rules from other standards. -->
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+	<rule ref="Generic.Commenting.Todo"/>
+	<rule ref="Squiz.Commenting.FunctionComment.SpacingAfter"/>
+
+	<!-- Only enforce aligning assignment operators when difference is 2 or less. -->
+	<rule ref="Generic.Formatting.MultipleStatementAlignment">
+		<properties>
+			<property name="maxPadding" value="2" />
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="fe"/>
+		</properties>
+	</rule>
+
+</ruleset>
