@@ -27,7 +27,7 @@
   }
 
   // Add src to image.
-  image.src = feDevelopmentOverlay.path + '/' + src;
+  image.src = getImgSrcValue(src);
 
   // Update CSS.
   Object.keys(properties).forEach(function(key) {
@@ -87,6 +87,18 @@
 
   function needsPx(key) {
     return -1 !== propertiesThatNeedPx.indexOf(key);
+  }
+
+  function getImgSrcValue(src) {
+    if (
+      'undefined' !== typeof feDevelopmentOverlay &&
+      'undefined' !== typeof feDevelopmentOverlay.path
+    ) {
+      // Use path provided by feDevelopmentOverlay (via WordPress).
+      return feDevelopmentOverlay.path + '/' + src;
+    }
+    // Use default path.
+    return './overlay/' + src;
   }
 
 }());
