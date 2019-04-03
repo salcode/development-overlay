@@ -60,6 +60,11 @@
   // Listen for button click.
   toggleBtn.addEventListener('click', toggleImageDisplay);
 
+  // Listen for ESC key (i.e. keyCode 27).
+  document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 27) { toggleImageDisplay(); }
+  });
+
   // Add button to page.
   document.body.appendChild(toggleBtn);
 
