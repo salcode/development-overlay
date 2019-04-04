@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Keyboard support, ESC key toggle overlay
 - Add default image path (./overlay/) for projects without WordPress
 - Add comment to top of JavaScript file for stand-alone use
+- Document use of js/development-overlay.js outside of WordPress
 
 ### Removed
 - Remove unused readme.txt

@@ -7,6 +7,13 @@ Once you activate this plugin, on the front-end of your website you'll get a
 
 See [https://salferrarello.com/wordpress-development-overlay/](https://salferrarello.com/wordpress-development-overlay/)
 
+## Non-WordPress Projects
+
+In a non-WordPress project the JavaScript file,
+[js/development-overlay.js](js/development-overlay.js), can be used on its own.
+When used on its own, the overlay images are loaded from the relative path
+`./overlay/`.
+
 ## Configuration
 
 You can replace `default.jpg` with the image you want to overlay on your website during development.
