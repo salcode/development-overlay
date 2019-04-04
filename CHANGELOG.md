@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add default image path (./overlay/) for projects without WordPress
 - Add comment to top of JavaScript file for stand-alone use
 
+### Removed
+- Remove unused readme.txt
+
 ## [0.1.0] - 2018-07-14
 ### Added
 - Initial Release
