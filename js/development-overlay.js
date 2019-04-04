@@ -1,3 +1,10 @@
+/**
+ * Development Overlay
+ * Overlay an image on your page during development.
+ * https://salferrarello.com/wordpress-development-overlay/
+ * by Sal Ferrarello
+ * Version: 0.1.0
+ */
 (function() {
 
   var css = 'left: 50%; ',

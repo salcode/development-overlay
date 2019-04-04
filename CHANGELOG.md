@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Changelog
 - Keyboard support, ESC key toggle overlay
 - Add default image path (./overlay/) for projects without WordPress
+- Add comment to top of JavaScript file for stand-alone use
 
 ## [0.1.0] - 2018-07-14
 ### Added
