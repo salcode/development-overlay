@@ -7,7 +7,7 @@
  * Author URI:      https://salferrarello.com
  * Text Domain:     development-overlay
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  *
  * @package         development-overlay
  */
@@ -27,7 +27,7 @@ function fe_development_overlay_enqueue_js() {
 		'fe-development-overlay',
 		plugins_url( 'js/development-overlay.js', __FILE__ ),
 		array(),
-		'0.1.0',
+		'1.0.0',
 		true
 	);
 
